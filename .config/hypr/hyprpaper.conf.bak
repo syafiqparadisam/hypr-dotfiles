@@ -1,0 +1,14 @@
+# Hyprpaper Configuration
+
+# Wallpaper file path
+
+
+preload = /usr/share/backgrounds/space1080p.jpg
+wallpaper = , /usr/share/backgrounds/space1080p.jpg
+
+# Wallpaper display mode
+# Options: fill, fit, tile, center
+mode=fill
+
+# Set screen to apply wallpaper on (e.g., "eDP-1", "HDMI-A-1")
+#output=eDP-1

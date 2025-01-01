@@ -1,0 +1,39 @@
+[2024-12-11 18:23:40.255] [info] Using configuration file /home/syafiq/.config/waybar/config
+[2024-12-11 18:23:40.261] [info] Unable to receive desktop appearance: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: No such interface “org.freedesktop.portal.Settings” on object at path /org/freedesktop/portal/desktop
+[2024-12-11 18:23:40.261] [info] Using CSS file /home/syafiq/.config/waybar/style.css
+[2024-12-11 18:23:40.282] [info] Hyprland IPC starting
+[2024-12-11 18:23:40.284] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-12-11 18:23:40.297] [warning] Error while creating the menu : Failed to expand file: . Menu popup not activated.
+[2024-12-11 18:23:40.500] [warning] Requested height: 30 is less than the minimum height: 38 required by the modules
+[2024-12-11 18:23:40.501] [info] Bar configured (width: 1320, height: 38) for output: eDP-1
+[2024-12-11 18:24:56.785] [info] Using configuration file /home/syafiq/.config/waybar/config
+[2024-12-11 18:24:56.789] [info] Unable to receive desktop appearance: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: No such interface “org.freedesktop.portal.Settings” on object at path /org/freedesktop/portal/desktop
+[2024-12-11 18:24:56.789] [info] Using CSS file /home/syafiq/.config/waybar/style.css
+[2024-12-11 18:24:56.806] [info] Hyprland IPC starting
+[2024-12-11 18:24:56.807] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-12-11 18:24:56.814] [warning] Error while creating the menu : Failed to expand file: . Menu popup not activated.
+[2024-12-11 18:24:57.000] [warning] Requested height: 30 is less than the minimum height: 38 required by the modules
+[2024-12-11 18:24:57.000] [info] Bar configured (width: 1320, height: 38) for output: eDP-1
+[2024-12-11 18:25:06.338] [info] Using configuration file /home/syafiq/.config/waybar/config
+[2024-12-11 18:25:06.344] [info] Unable to receive desktop appearance: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: No such interface “org.freedesktop.portal.Settings” on object at path /org/freedesktop/portal/desktop
+[2024-12-11 18:25:06.344] [info] Using CSS file /home/syafiq/.config/waybar/style.css
+[2024-12-11 18:25:06.359] [info] Hyprland IPC starting
+[2024-12-11 18:25:06.360] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-12-11 18:25:06.369] [warning] Error while creating the menu : Failed to expand file: . Menu popup not activated.
+[2024-12-11 18:25:06.548] [warning] Requested height: 30 is less than the minimum height: 38 required by the modules
+[2024-12-11 18:25:06.548] [info] Bar configured (width: 1320, height: 38) for output: eDP-1
+[2024-12-11 18:25:12.197] [info] Using configuration file /home/syafiq/.config/waybar/config
+[2024-12-11 18:25:12.199] [info] Unable to receive desktop appearance: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: No such interface “org.freedesktop.portal.Settings” on object at path /org/freedesktop/portal/desktop
+[2024-12-11 18:25:12.199] [info] Using CSS file /home/syafiq/.config/waybar/style.css
+[2024-12-11 18:25:12.214] [info] Hyprland IPC starting
+[2024-12-11 18:25:12.214] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-12-11 18:25:12.226] [warning] Error while creating the menu : Failed to expand file: . Menu popup not activated.
+[2024-12-11 18:25:12.416] [warning] Requested height: 30 is less than the minimum height: 38 required by the modules
+[2024-12-11 18:25:12.416] [info] Bar configured (width: 1320, height: 38) for output: eDP-1
+[2024-12-11 18:26:10.191] [info] Using configuration file /home/syafiq/.config/waybar/config
+[2024-12-11 18:26:10.195] [info] Unable to receive desktop appearance: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: No such interface “org.freedesktop.portal.Settings” on object at path /org/freedesktop/portal/desktop
+[2024-12-11 18:26:10.195] [info] Using CSS file /home/syafiq/.config/waybar/style.css
+[2024-12-11 18:26:10.208] [info] Hyprland IPC starting
+[2024-12-11 18:26:10.209] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-12-11 18:26:10.401] [warning] Requested height: 30 is less than the minimum height: 38 required by the modules
+[2024-12-11 18:26:10.401] [info] Bar configured (width: 1320, height: 38) for output: eDP-1
