@@ -14,8 +14,8 @@
 	"clock"
     ],
     "modules-center": [
-	"custom/wallpaper",
-	"custom/wallpaper_video"
+	"hyprland/scratchpad"
+	// "custom/wallpaper_video"
     ],
     "modules-right": [
        // "mpd",
@@ -37,7 +37,7 @@
     ],
      "hyprland/workspaces": {
 	"active-only": false,
-         "disable-scroll": false,
+         "disable-scroll": true,
          "all-outputs": true,
 	"show-special": false,
          "warp-on-scroll": true,
@@ -192,8 +192,7 @@
       }
     },
     "network": {
-        // "interface": "wlp2*", // (Optional) To force the use of this interface
-	"interval": 10,
+        "interface": "wlan0", // (Optional) To force the use of this interface
         "format-wifi": "  {essid}",
         "format-ethernet": "{ipaddr}/{cidr} ",
         "tooltip-format": "{ifname} via {gwaddr} ",

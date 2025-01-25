@@ -1,22 +1,25 @@
 #ALIAS
 alias fastfetch="fastfetch --config $HOME/.config/fastfetch/config"
 alias ll="ls -alh"
-alias docker="sudo docker"
 
 export PATH="$HOME/mpvpaper/build:$PATH"
 
 source /usr/share/nvm/init-nvm.sh
 
-xhost +SI:localuser:root
+#xhost +SI:localuser:root
 
 export PATH=$HOME/.local/bin:$PATH
+#PATH=/home/syafiq/bin:/sbin:/usr/sbin:$PATH dockerd-rootless.sh
+
 
 export BAT_THEME="Dracula"
 
 alias cat="bat"
 
 alias neofetch="neofetch --config ~/neofetch-themes/small/dotfetch.conf"
+
+export PATH=/home/syafiq/bin:$PATH
+
+export DOCKER_HOST=unix:///run/user/1000/docker.sock
+
 #neofetch
-
-
-

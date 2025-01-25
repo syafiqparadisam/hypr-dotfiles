@@ -78,12 +78,7 @@ source <(fzf --zsh)
 
 export BAT_THEME="Dracula"
 
-export PATH="$HOME/mpvpaper/build:$PATH"
-
-alias neofetch="neofetch --config ~/neofetch-themes/small/dotfetch.conf"
-neofetch
-source /usr/share/nvm/init-nvm.sh
-
+source $HOME/.alias
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
@@ -93,7 +88,6 @@ plugins=(git zsh-syntax-highlighting zsh-autosuggestions ansible z zoxide docker
 
 source $ZSH/oh-my-zsh.sh
 
-alias docker="sudo docker"
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
