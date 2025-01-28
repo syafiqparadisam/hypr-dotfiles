@@ -13,14 +13,14 @@ uptime="`uptime -p | sed -e 's/up //g'`"
 host=`hostname`
 
 # Options
-hibernate=''
-shutdown=''
-reboot=''
-lock=''
-suspend=''
-logout=''
-yes=''
-no=''
+hibernate='  '
+shutdown=' ⏻ '
+reboot='  '
+lock='  '
+suspend=' 󰍃 '
+logout=' 󰍃 '
+yes='  '
+no='  '
 
 # Rofi CMD
 rofi_cmd() {
@@ -58,17 +58,19 @@ run_cmd() {
 	selected="$(confirm_exit)"
 	if [[ "$selected" == "$yes" ]]; then
 		if [[ $1 == '--shutdown' ]]; then
-			shutdown now
+			loginctl poweroff
 		elif [[ $1 == '--reboot' ]]; then
-			sudo reboot
+			loginctl reboot
 		elif [[ $1 == '--hibernate' ]]; then
-			systemctl hibernate
+			loginctl hibernate
 		elif [[ $1 == '--suspend' ]]; then
 			mpc -q pause
 			amixer set Master mute
-			systemctl suspend
+			loginctl suspend
 		elif [[ $1 == '--logout' ]]; then
-			if [[ "$DESKTOP_SESSION" == 'openbox' ]]; then
+			if [[ "$DESKTOP_SESSION" == 'hyprland' ]]; then
+        hyprctl dispatch exit
+			elif [[ "$DESKTOP_SESSION" == 'openbox' ]]; then
 				openbox --exit
 			elif [[ "$DESKTOP_SESSION" == 'bspwm' ]]; then
 				bspc quit

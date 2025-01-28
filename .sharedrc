@@ -1,0 +1,23 @@
+#ALIAS
+alias fastfetch="fastfetch --config $HOME/.config/fastfetch/config"
+alias ll="ls -alh"
+
+export PATH="$HOME/mpvpaper/build:$PATH"
+
+source /usr/share/nvm/init-nvm.sh
+
+#xhost +SI:localuser:root
+
+export PATH=$HOME/.local/bin:$PATH
+
+export BAT_THEME="Dracula"
+
+alias cat="bat"
+
+alias neofetch="neofetch --config ~/neofetch-themes/normal/boxes.conf"
+
+export PATH=/home/syafiq/bin:$PATH
+
+export DOCKER_HOST=unix:///run/user/1000/docker.sock
+
+neofetch

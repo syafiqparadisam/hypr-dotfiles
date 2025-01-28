@@ -2,13 +2,13 @@
   font-family: JetBrainsMonoNerdFontMono;
   font-weight: bold;
   min-height: 0;
-  font-size: 102%;
+  font-size: 100%;
   font-feature-settings: 'zero, ss01, ss02, ss03, ss04, ss05, cv31';
   padding: 1px;
 }
 
 window#waybar {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0);
   transition-property: background-color;
   transition-duration: .5s;
 }
@@ -45,7 +45,13 @@ tooltip label {
 #network,
 #pulseaudio,
 #temperature,
-#workspaces,
+
+#workspaces {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
 #custom-menu,
 #custom-swaync {
   border-radius: 10px;
@@ -78,10 +84,10 @@ tooltip label {
 }
 
 #workspaces button {
-  margin: 1px;
+  margin: 2px;
   box-shadow: none;
   text-shadow: none;
-  border-radius: 12px;
+  border-radius: 20px;
   padding-left: 6px;
   padding-right: 6px;
   background-color: #ebdbb2;
@@ -89,10 +95,21 @@ tooltip label {
 }
 
 #battery {
-  color: #ebdbb2;
+   background-color: #3E3434;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 
 #temperature.critical {
   background-color: red;
+}
+
+
+#custom-power {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
 }

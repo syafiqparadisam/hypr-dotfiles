@@ -11,6 +11,6 @@
 source /etc/profile
 
 if [ -f ~/.alias ]; then
-	source ~/.alias
+	source ~/.sharedrc
 fi
 

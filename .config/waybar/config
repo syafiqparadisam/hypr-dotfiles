@@ -3,20 +3,21 @@
     "position": "top", // Waybar position (top|bottom|left|right)
     "height": 30,
 	"exclusive": true,
-	"passthrough": false,
-"fixed-center": true,
+	"passthrough": true,
+    "fixed-center": true,
     "width": "100%", // Waybar width
     "spacing": 3, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": [
 	"custom/artix",
         "hyprland/workspaces",
-	"clock"
-    ],
-    "modules-center": [
+        "temperature",
+	"clock",
 	"hyprland/scratchpad"
-	// "custom/wallpaper_video"
     ],
+//    "modules-center": [
+	// "custom/wallpaper_video"
+//    ],
     "modules-right": [
        // "mpd",
         //"idle_inhibitor",
@@ -50,8 +51,9 @@
          }
      },
      "custom/artix": {
-	"format": "",
-	"tooltip": false
+        "format": "",
+        "tooltip": true,
+        "tooltip-format": "Artix Linux"
      },
     "keyboard-state": {
         "numlock": true,
@@ -66,9 +68,9 @@
         "format": "<span style=\"italic\">{}</span>"
     },
     "hyprland/scratchpad": {
-        "format": "{icon} {count}",
+        "format": "{icon} fgfg {count}",
         "show-empty": false,
-        "format-icons": ["", ""],
+        "format-icons": ["", ""],
         "tooltip": true,
         "tooltip-format": "{app}: {title}"
     },
@@ -144,16 +146,16 @@
      },
     "cpu": {
         "format": "{usage}% ",
-        "tooltip": false
+        "tooltip": true
     },
     "memory": {
         "format": "{}% "
     },
     "temperature": {
-        // "thermal-zone": 2,
-        // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+        "thermal-zone": 2,
+        "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
         "critical-threshold": 80,
-        // "format-critical": "{temperatureC}°C {icon}",
+        "format-critical": "{temperatureC}°C {icon}",
         "format": "{temperatureC}°C {icon}",
         "format-icons": ["", "", ""]
     },
@@ -164,7 +166,7 @@
     },
     "battery": {
         "states": {
-            // "good": 95,
+            "good": 95,
             "warning": 30,
             "critical": 15
         },
@@ -173,13 +175,14 @@
         "format-charging": "{capacity}% ",
         "format-plugged": "{capacity}% ",
         "format-alt": "{time} {icon}",
-        // "format-good": "", // An empty format will hide the module
-        // "format-full": "",
+        "format-good": " 󱊣 ", 
+        "format-full": " 󱊣 ",
+        "format-critical": "󰂎",
         "format-icons": ["", "", "", "", ""]
     },
-    "battery#bat2": {
-        "bat": "BAT2"
-    },
+    // "battery#bat2": {
+    //     "bat": "BAT2"
+    // },
     "power-profiles-daemon": {
       "format": "{icon}",
       "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
@@ -193,7 +196,7 @@
     },
     "network": {
         "interface": "wlan0", // (Optional) To force the use of this interface
-        "format-wifi": "  {essid}",
+        "format-wifi": " {essid}",
         "format-ethernet": "{ipaddr}/{cidr} ",
         "tooltip-format": "{ifname} via {gwaddr} ",
         "format-linked": "{ifname} (No IP) ",
@@ -219,20 +222,20 @@
 	"tooltip-format": "{icon} {desc} | {volume}%",
     "smooth-scrolling-threshold": 1
 },
-"custom/media": {
-        "format": "{icon} {}",
-        "return-type": "json",
-        "max-length": 40,
-        "format-icons": {
-            "spotify": "",
-            "default": "🎜"
-        },
-        "escape": true,
-        "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
+"custom/cava": {
+        // "format": "{icon} {}",
+        // "return-type": "json",
+        // "max-length": 40,
+        // "format-icons": {
+        //     "spotify": "",
+        //     "default": "🎜"
+        // },
+        // "escape": true,
+        "exec": "$HOME/.config/waybar/cava_status.sh"
         // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
     },
     "custom/power": {
         "format" : " ⏻ ",
-	"on-click": "$HOME/.config/rofi/powermenu/type-1/powermenu.sh",
+	    "on-click": "/usr/bin/wlogout"
     }
 }
