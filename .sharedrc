@@ -19,5 +19,6 @@ alias neofetch="neofetch --config ~/neofetch-themes/normal/boxes.conf"
 export PATH=/home/syafiq/bin:$PATH
 
 export DOCKER_HOST=unix:///run/user/1000/docker.sock
+#export $(dbus-launch) 
 
 neofetch

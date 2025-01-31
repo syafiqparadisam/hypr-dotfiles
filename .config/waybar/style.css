@@ -111,5 +111,6 @@ tooltip label {
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 10px;
   padding-left: 10px;
+  font-size: 100%;
   padding-right: 10px;
 }

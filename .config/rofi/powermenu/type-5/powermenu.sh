@@ -17,7 +17,7 @@ hibernate='  '
 shutdown=' ⏻ '
 reboot='  '
 lock='  '
-suspend=' 󰍃 '
+suspend=' Suspend '
 logout=' 󰍃 '
 yes='  '
 no='  '
@@ -69,7 +69,7 @@ run_cmd() {
 			loginctl suspend
 		elif [[ $1 == '--logout' ]]; then
 			if [[ "$DESKTOP_SESSION" == 'hyprland' ]]; then
-        hyprctl dispatch exit
+ 			       hyprctl dispatch exit
 			elif [[ "$DESKTOP_SESSION" == 'openbox' ]]; then
 				openbox --exit
 			elif [[ "$DESKTOP_SESSION" == 'bspwm' ]]; then
@@ -98,11 +98,7 @@ case ${chosen} in
 		run_cmd --hibernate
         ;;
     $lock)
-		if [[ -x '/usr/bin/betterlockscreen' ]]; then
-			betterlockscreen -l
-		elif [[ -x '/usr/bin/i3lock' ]]; then
-			i3lock
-		fi
+	    hyprlock
         ;;
     $suspend)
 		run_cmd --suspend

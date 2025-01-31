@@ -1,0 +1,31 @@
+** Message: 13:14:06.937: configModel.vala:289: Loading Config: "/home/syafiq/hyprland-dotfiles/.config/swaync/config.json"
+** Message: 13:14:06.938: functions.vala:86: Loading CSS: "/etc/xdg/swaync/style.css"
+** Message: 13:14:06.939: functions.vala:100: Loading CSS: "/home/syafiq/hyprland-dotfiles/.config/swaync/style.css"
+** Message: 13:14:06.945: factory.vala:44: Loading widget: title
+** Message: 13:14:06.945: factory.vala:44: Loading widget: dnd
+** Message: 13:14:06.947: factory.vala:44: Loading widget: mpris
+** Message: 13:14:06.948: factory.vala:44: Loading widget: volume
+** Message: 13:14:06.950: factory.vala:44: Loading widget: backlight
+** Message: 13:14:06.951: factory.vala:44: Loading widget: buttons-grid
+Could not acquire notification name. Please close any other notification daemon like mako or dunst
+** Message: 13:14:11.517: configModel.vala:289: Loading Config: "/home/syafiq/hyprland-dotfiles/.config/swaync/config.json"
+** Message: 13:14:11.517: functions.vala:86: Loading CSS: "/etc/xdg/swaync/style.css"
+** Message: 13:14:11.519: functions.vala:100: Loading CSS: "/home/syafiq/hyprland-dotfiles/.config/swaync/style.css"
+** Message: 13:14:11.525: factory.vala:44: Loading widget: title
+** Message: 13:14:11.526: factory.vala:44: Loading widget: dnd
+** Message: 13:14:11.528: factory.vala:44: Loading widget: mpris
+** Message: 13:14:11.528: factory.vala:44: Loading widget: volume
+** Message: 13:14:11.531: factory.vala:44: Loading widget: backlight
+** Message: 13:14:11.532: factory.vala:44: Loading widget: buttons-grid
+Could not acquire notification name. Please close any other notification daemon like mako or dunst
+[2025-01-28 13:29:29.786] [info] Using configuration file /home/syafiq/.config/waybar/config
+[2025-01-28 13:29:29.788] [info] Unable to receive desktop appearance: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: No such interface “org.freedesktop.portal.Settings” on object at path /org/freedesktop/portal/desktop
+[2025-01-28 13:29:29.788] [info] Using CSS file /home/syafiq/.config/waybar/style.css
+[2025-01-28 13:29:29.797] [info] Hyprland IPC starting
+[2025-01-28 13:29:29.797] [info] Loading persistent workspaces from Hyprland workspace rules
+[2025-01-28 13:29:29.804] [warning] module hyprland/scratchpad: Unknown module: hyprland/scratchpad
+[2025-01-28 13:29:29.977] [warning] Requested height: 30 is less than the minimum height: 36 required by the modules
+[2025-01-28 13:29:29.977] [info] Bar configured (width: 1366, height: 36) for output: eDP-1
+[2025-01-28 13:30:44.367] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2025-01-28 13:30:44.370] [info] Loading persistent workspaces from Hyprland workspace rules
+Gdk-Message: 13:33:01.883: Error reading events from display: Broken pipe

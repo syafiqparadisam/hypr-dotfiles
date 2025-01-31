@@ -9,7 +9,11 @@
 
 /*****----- Configuration -----*****/
 configuration {
-    show-icons:                 false;
+    show-icons:                 true;
+}
+
+*{
+  bgcolor:                        #00000099;
 }
 
 /*****----- Global Properties -----*****/
@@ -50,7 +54,8 @@ configuration {
     gradient-19:                 linear-gradient(0, #03001e, #7303c0, #ec38bc, #fdeff9);
     gradient-20:                 linear-gradient(0, #780206, #061161);
     
-    background-window:           var(gradient-6);
+   /*background-window:           var(gradient-6);*/
+    background-window:		@bgcolor;
     background-normal:           white/10%;
     background-selected:         white/20%;
     foreground-normal:           white;
@@ -64,7 +69,8 @@ window {
     anchor:                      center;
     fullscreen:                  true;
     cursor:                      "default";
-    background-image:            var(background-window);
+  /*background-image:            var(background-window);*/
+    background-color:		  @bgcolor;
 }
 
 /*****----- Main Box -----*****/
@@ -81,9 +87,9 @@ userimage {
     margin:                      0px 400px;
     border:                      2px;
     border-radius:               100%;
-    border-color:                white;
+    border-color:                #67b0e8;
     background-color:            transparent;
-    background-image:            url("~/.config/rofi/images/user.jpeg", both);
+ /*   background-image:            url("~/.config/rofi/images/user.png", both); */
 }
 
 /*****----- Inputbar -----*****/
@@ -95,6 +101,7 @@ inputbar {
 
 dummy {
     background-color:            transparent;
+
 }
 
 prompt {
@@ -111,7 +118,7 @@ message {
     padding:                     var(message-padding);
     border-radius:               var(message-border-radius);
     background-color:            var(background-normal);
-    text-color:                  var(foreground-normal);
+    text-color:                  #67b0e8;
 }
 textbox {
     font:                        var(textbox-font);
@@ -158,6 +165,6 @@ element-text {
     horizontal-align:            0.5;
 }
 element selected.normal {
-    background-color:            var(background-selected);
-    text-color:                  var(foreground-selected);
+    background-color:            #232a2d70;
+    text-color:                  #ee5396;
 }
