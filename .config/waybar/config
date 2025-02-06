@@ -175,9 +175,9 @@
         "format-charging": "{capacity}% ",
         "format-plugged": "{capacity}% ",
         "format-alt": "{time} {icon}",
-        "format-good": " 󱊣 ", 
-        "format-full": " 󱊣 ",
-        "format-critical": "󰂎",
+ //       "format-good": " 󱊣 {capacity}%", 
+  //      "format-full": " 󱊣 {capacity}%",
+   //     "format-critical": " 󰂎 {capacity}&",
         "format-icons": ["", "", "", "", ""]
     },
     // "battery#bat2": {
