@@ -71,7 +71,7 @@ compinit
 
 export PATH=$HOME/.local/bin:$PATH
 
-eval "$(oh-my-posh init zsh --config ~/.poshthemes/catppuccin_mocha.omp.json)"
+eval "$(oh-my-posh init zsh --config ~/.poshthemes/bubblesextra.omp.json)"
 
 eval "$(zoxide init zsh)"
 source <(fzf --zsh)
@@ -118,5 +118,5 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 eval "$(pyenv init - zsh)"
-
-
+export PATH=/opt/vscode/bin:$PATH
+eval "$(rbenv init -)"

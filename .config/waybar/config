@@ -13,7 +13,7 @@
         "hyprland/workspaces",
         "temperature",
 	"clock",
-	"hyprland/scratchpad"
+    "keyboard-state"
     ],
 //    "modules-center": [
 	// "custom/wallpaper_video"
@@ -32,21 +32,21 @@
         // "keyboard-state",
  //       "sway/language",
         "battery",
-        // "battery#bat1"
+        "battery#bat2",
      //   "clock",
         "custom/power"
     ],
      "hyprland/workspaces": {
-	"active-only": false,
-         "disable-scroll": true,
+	       "active-only": false,
+         "disable-scroll": false,
          "all-outputs": true,
-	"show-special": false,
+         "show-special": true,
          "warp-on-scroll": true,
-	"on-scroll-up": "hyprctl dispatch workspace e+1",
-	"on-scroll-down": "hyprctl dispatch workspace e+1",
+	       "on-scroll-up": "hyprctl dispatch workspace e+1",
+         "on-scroll-down": "hyprctl dispatch workspace e+1",
          "format": "{icon}",
          "format-icons": {
-	      "active": "󰮯",
+	       "active": "󰮯",
              "default": ""
          }
      },
@@ -180,9 +180,9 @@
    //     "format-critical": " 󰂎 {capacity}&",
         "format-icons": ["", "", "", "", ""]
     },
-    // "battery#bat2": {
-    //     "bat": "BAT2"
-    // },
+     "battery#bat2": {
+         "bat": "BAT2",
+     },
     "power-profiles-daemon": {
       "format": "{icon}",
       "tooltip-format": "Power profile: {profile}\nDriver: {driver}",

@@ -1,6 +1,7 @@
 #ALIAS
 alias fastfetch="fastfetch --config $HOME/.config/fastfetch/config"
 alias ll="ls -alh"
+export EDITOR=vim
 
 export PATH="$HOME/mpvpaper/build:$PATH"
 
@@ -21,8 +22,10 @@ export BAT_THEME="Dracula"
 export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 
-[[ -s "/home/syafiq/.gvm/scripts/gvm" ]] && source "/home/syafiq/.gvm/scripts/gvm"
 alias cat="bat"
+
+export PATH="/opt/winbox/:$PATH"
+alias winbox="wine /opt/winbox/winbox64.exe"
 
 alias neofetch="neofetch --config ~/neofetch-themes/normal/boxes.conf"
 

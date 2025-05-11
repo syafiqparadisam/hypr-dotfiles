@@ -19,3 +19,4 @@ fi
 . "/home/syafiq/.rsvm/current/cargo/env"
 
 [[ -s "/home/syafiq/.gvm/scripts/gvm" ]] && source "/home/syafiq/.gvm/scripts/gvm"
+eval "$(rbenv init -)"
