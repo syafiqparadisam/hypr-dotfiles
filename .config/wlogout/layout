@@ -11,16 +11,22 @@
     "keybind" : "r"
 }
 {
-    "label" : "logout",
-    "action" : "hyprctl dispatch exit",
-    "text" : "Logout",
-    "keybind" : "e"
+    "label" : "suspend",
+    "action" : "loginctl suspend",
+    "text" : "Suspend",
+    "keybind" : "p"
 }
 {
     "label" : "hibernate",
     "action" : "loginctl hibernate",
     "text" : "Hibernate",
     "keybind" : "h"
+}
+{
+    "label" : "logout",
+    "action" : "hyprctl dispatch exit",
+    "text" : "Logout",
+    "keybind" : "e"
 }
 {
     "label" : "lock",

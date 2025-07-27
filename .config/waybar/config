@@ -13,7 +13,7 @@
         "hyprland/workspaces",
         "temperature",
 	"clock",
-    "keyboard-state"
+	"pulseaudio"
     ],
 //    "modules-center": [
 	// "custom/wallpaper_video"
@@ -21,8 +21,6 @@
     "modules-right": [
        // "mpd",
         //"idle_inhibitor",
-
-	"pulseaudio",
         "network",
         //"power-profiles-daemon",
         "cpu",
@@ -136,7 +134,7 @@
       "on-scroll-up": "shift_up",
       "on-scroll-down": "shift_down"
 },
-    "custom/wallpaper": {
+   "custom/wallpaper": {
         "format": "   󰋩   ",
     	"on-click": "$HOME/.config/waybar/change_wallpaper.sh"
      },
@@ -145,14 +143,21 @@
     	"on-click": "$HOME/.config/waybar/change_wpp_video.sh"
      },
     "cpu": {
-        "format": "{usage}% ",
-        "tooltip": true
+        "format": "CPU {usage}%",
+        "tooltip": true,
+	"interval": 1,
+	"tooltip": true
+
     },
     "memory": {
-        "format": "{}% "
+        "format": "RAM {used}GB / {total}GB",
+	"interval": 1,
+	"tooltip": true
     },
     "temperature": {
         "thermal-zone": 2,
+	"interval": 1,
+	"tooltip": true,
         "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
         "critical-threshold": 80,
         "format-critical": "{temperatureC}°C {icon}",
@@ -195,13 +200,15 @@
       }
     },
     "network": {
-        "interface": "wlan0", // (Optional) To force the use of this interface
+	"interface": "eth0",
+        "format": "{bandwidthDownBits}  {bandwidthUpBits} " ,
         "format-wifi": " {essid}",
-        "format-ethernet": "{ipaddr}/{cidr} ",
-        "tooltip-format": "{ifname} via {gwaddr} ",
+        "tooltip-format": "󰈀 {ifname} via {gwaddr}",
         "format-linked": "{ifname} (No IP) ",
-        "format-disconnected": "Disconnected  󰖪",
-        "format-alt": "{ifname}: {ipaddr}/{cidr}"
+        "format-disconnected": "Disconnected",
+        "format-alt": "{ifname}: {ipaddr}/{cidr}",
+	"interval":1,
+	"on-click-right": "kitty nmtui"
     },
    "pulseaudio": {
     "format": " {volume}% {icon} ",
@@ -236,6 +243,6 @@
     },
     "custom/power": {
         "format" : " ⏻ ",
-	    "on-click": "/usr/bin/wlogout"
+	    "on-click": "/usr/bin/wlogout -C $HOME/.config/wlogout/nova.css"
     }
 }

@@ -37,6 +37,13 @@ tooltip label {
   color: #ebdbb2;
 }
 
+#custom-pubip {
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
 #custom-cava,
 #clock,
 #cpu,

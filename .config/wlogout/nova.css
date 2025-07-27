@@ -22,7 +22,7 @@ button {
     transition: all 0.3s ease-in;
     box-shadow: 0 0 10px 2px transparent;
     border-radius: 36px;
-    margin: 10px;
+    padding: 1px;
 }
 
 button:focus {
@@ -69,9 +69,18 @@ button:hover {
   background-image: image(url("./icons/lock-hover.png"));
 }
 
-#hibernate {
-    background-image: image(url("./icons/hibernate.png"));
+#suspend {
+  background-image: image(url("./icons/sleep.png"));
 }
+
+#suspend:hover {
+  background-image: image(url("./icons/sleep-hover.png"));
+}
+
+#hibernate {
+  background-image: image(url("./icons/hibernate.png"));
+}
+
 #hibernate:hover {
   background-image: image(url("./icons/hibernate-hover.png"));
 }
